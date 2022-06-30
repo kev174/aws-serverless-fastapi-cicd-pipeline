@@ -12,7 +12,7 @@ app.include_router(api_router, prefix="/api/v1")
 def main_endpoint_test():
     return {"message": "Welcome Kevin to your CI/CD Pipeline with GitHub Actions!"}
 	
-@app.get("/kevin",  tags=["Endpoint Test"])
+@app.get("/kevin",  tags=["Endpoint Test2"])
 def main_endpoint_test():
     return {"message": "Welcome Kevin to your CI/CD Pipeline with GitHub Actions!"}
 
