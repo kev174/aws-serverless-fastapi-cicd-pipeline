@@ -1,3 +1,5 @@
+# https://medium.com/thelorry-product-tech-data/aws-lambda-fastapi-ci-cd-pipeline-with-github-actions-c414866b2d48
+
 from fastapi import FastAPI
 from mangum import Mangum
 from api.v1.api import router as api_router
