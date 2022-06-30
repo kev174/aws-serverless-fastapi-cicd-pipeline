@@ -13,7 +13,7 @@ def main_endpoint_test():
     return {"message": "Welcome Kevin to your CI/CD Pipeline with GitHub Actions!"}
 	
 @app.get("/kevin",  tags=["Endpoint Test2"])
-def main_endpoint_test():
+def main_endpoint_test2():
     return {"message": "Welcome Kevin to your CI/CD Pipeline with GitHub Actions!"}
 
 # to make it work with Amazon Lambda, we create a handler object
