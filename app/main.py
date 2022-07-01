@@ -1,4 +1,10 @@
 # https://medium.com/thelorry-product-tech-data/aws-lambda-fastapi-ci-cd-pipeline-with-github-actions-c414866b2d48
+# https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev
+# http://127.0.0.1:8000/api/v1/test/
+# http://127.0.0.1:8000/
+# http://127.0.0.1:8000/kevin
+# http://127.0.0.1:8000/redoc
+# http://127.0.0.1:8000/docs
 
 from fastapi import FastAPI
 from mangum import Mangum
