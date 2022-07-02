@@ -20,5 +20,5 @@ def test_child_posts_resource():
     assert response_auth.status_code == 200
 
 def test_child_root_kevin_resource():
-    response_auth = client.get(f"/kevin")
+    response_auth = client.get(f"/kevin/34")
     assert response_auth.status_code == 200
