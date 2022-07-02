@@ -4,6 +4,8 @@
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/kevin
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/api/v1/test/
+# https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/api/v1/users/
+# https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/api/v1/posts/
 # http://127.0.0.1:8000/api/v1/test/
 # http://127.0.0.1:8000/
 # http://127.0.0.1:8000/kevin
@@ -13,14 +15,13 @@
 # http://127.0.0.1:8000/api/v1/users/
 # http://127.0.0.1:8000/api/v1/posts/
 
-# uvicorn api.main:app --reload
+# uvicorn main:app --reload                 cd into app - cd app
 
 from fastapi import FastAPI
 from mangum import Mangum
-from api.v1.api import router as api_router
+from api.api_v1.api import router as api_router
 
 app = FastAPI(title='Serverless Lambda FastAPI')
-
 app.include_router(api_router, prefix="/api/v1")
 
 @app.get("/",  tags=["Endpoint Test"])
@@ -31,5 +32,4 @@ def main_endpoint_test():
 def main_endpoint_test2():
     return {"message": "Welcome Kevin Cusack to your /kevin endpoint CI/CD Pipeline with GitHub Actions!"}
 
-# to make it work with Amazon Lambda, we create a handler object
-handler = Mangum(app=app)
+handler = Mangum(app=app) # to make it work with Amazon Lambda, we create a handler object using Mangum

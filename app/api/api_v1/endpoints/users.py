@@ -2,9 +2,8 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-# changed @app.get("/") to @router.get("/")
 @router.get("/")
-async def rootuser():
+async def root():
     return {"message": "Get Userssss!"}
 
 @router.get("/kevin")
