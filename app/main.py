@@ -28,8 +28,8 @@ app.include_router(api_router, prefix="/api/v1")
 def main_endpoint_test():
     return {"message": "Welcome Kevin to your ROOT CI/CD Pipeline with GitHub Actions!"}
 	
-@app.get("/kevin",  tags=["Endpoint Test-2"])
-def main_endpoint_test2():
-    return {"message": "Welcome Kevin Cusack to your /kevin endpoint CI/CD Pipeline with GitHub Actions!"}
+@app.get("/kevin/{item_id}",  tags=["Endpoint Test-2"])
+def main_endpoint_test2(item_id: int):
+    return {"Welcome Kevin Cusack to your /kevin endpoint CI/CD Pipeline with GitHub Actions! Id sent=": item_id}
 
 handler = Mangum(app=app) # to make it work with Amazon Lambda, we create a handler object using Mangum
