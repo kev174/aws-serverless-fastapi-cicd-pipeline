@@ -1,8 +1,7 @@
 # https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/
 # https://medium.com/thelorry-product-tech-data/aws-lambda-fastapi-ci-cd-pipeline-with-github-actions-c414866b2d48
-
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev
-# https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/kevin/35
+# https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/kevin/34
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/api/v1/test/
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/api/v1/users/
 # https://lsh8cin25k.execute-api.us-east-2.amazonaws.com/Dev/api/v1/posts/
@@ -14,6 +13,7 @@
 # http://127.0.0.1:8000/api/v1/test/      I need the final forward slash here
 # http://127.0.0.1:8000/api/v1/users/
 # http://127.0.0.1:8000/api/v1/posts/
+# http://127.0.0.1:8000/openapi.json      
 
 # uvicorn main:app --reload                 cd into app - cd app
 
