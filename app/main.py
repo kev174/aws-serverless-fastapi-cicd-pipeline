@@ -26,7 +26,7 @@ app.include_router(api_router, prefix="/api/v1")
 
 @app.get("/",  tags=["Endpoint Test"])
 def main_endpoint_test():
-    return {"message": "Welcome Kevin to your ROOT CI/CD Pipeline with GitHub Actions!"}
+    return {"message": "Welcome Kevin to your ROOT CI/CD Pipeline with GitHub Actions! CICD once again"}
 
 @app.get("/kevin/{item_id}",  tags=["Endpoint Test-2"])
 def main_endpoint_test2(item_id: int):
