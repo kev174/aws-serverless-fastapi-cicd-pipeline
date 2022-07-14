@@ -15,6 +15,9 @@
 # http://127.0.0.1:8000/api/v1/posts/
 # http://127.0.0.1:8000/openapi.json
 
+# uvicorn main:app --reload                 cd into app - cd app
+# https://www.programcreek.com/python/example/123593/google.cloud.logging.Client
+
 # uvicorn main:app --reload   *** you HAVE to 'cd app' first as the FROM api.api_v1 is not resolved *** 
 
 from fastapi import FastAPI
