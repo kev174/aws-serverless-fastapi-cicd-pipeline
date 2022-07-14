@@ -1,4 +1,4 @@
-name: CI/CD Pipeline: main master
+name: CI/CD Pipeline: - main yaml
 
 on:
   push:
