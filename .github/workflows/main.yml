@@ -1,8 +1,7 @@
-name: CI/CD Pipeline
+name: CI/CD Pipeline - dev-feature1 yaml
 
 on:
-  push:
-    branches: [ main ]
+  push
 
 jobs:
 
