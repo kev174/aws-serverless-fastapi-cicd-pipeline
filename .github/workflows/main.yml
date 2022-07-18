@@ -1,3 +1,10 @@
+# This shows you how to creat a fastapi using python best practices and dependencies required
+# https://www.deadbear.io/simple-serverless-fastapi-with-aws-lambda/
+# This shows you how to setup GitHub Events for CICD and the creation main.yml file
+# I used the above fastapi python application and using the below link for CICD to Lambda function
+# This yml file contains instructions to install pre-requisits, run pytest and zip file and send to lambda  
+# https://medium.com/thelorry-product-tech-data/aws-lambda-fastapi-ci-cd-pipeline-with-github-actions-c414866b2d48
+
 name: CI/CD Pipeline - main
 
 on:
