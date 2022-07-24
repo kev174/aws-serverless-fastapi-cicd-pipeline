@@ -22,7 +22,7 @@
 
 from fastapi import FastAPI
 from mangum import Mangum
-from api.api_v1.api import router as api_router
+from app.api.api_v1.api import router as api_router
 
 app = FastAPI(title='Serverless Lambda FastAPI')
 app.include_router(api_router, prefix="/api/v1")
