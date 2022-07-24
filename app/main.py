@@ -35,4 +35,4 @@ def main_endpoint_test():
 def main_endpoint_test2(item_id: int):
     return {"Welcome Kevin Cusack to your /kevin endpoint CI/CD Pipeline with GitHub Actions! Id sent=": item_id}
 
-handler = Mangum(app=app) # to make it work with Amazon Lambda, we create a handler object using Mangum
+handler = Mangum(app=app) # to make it work with Amazon Lambdas, we create a handler object using Mangum
