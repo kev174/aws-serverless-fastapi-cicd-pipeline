@@ -10,7 +10,7 @@
 # http://127.0.0.1:8000/kevin
 # http://127.0.0.1:8000/redoc
 # http://127.0.0.1:8000/docs
-# http://127.0.0.1:8000/api/v1/test/      I need the final forward slash here
+# http://127.0.0.1:8000/api/v1/test/      I need the final forward slash here.
 # http://127.0.0.1:8000/api/v1/users/
 # http://127.0.0.1:8000/api/v1/posts/
 # http://127.0.0.1:8000/openapi.json
