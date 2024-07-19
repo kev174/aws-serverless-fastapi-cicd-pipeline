@@ -6,11 +6,11 @@
 # https://medium.com/thelorry-product-tech-data/aws-lambda-fastapi-ci-cd-pipeline-with-github-actions-c414866b2d48
 
 # https://github.com/kev174/aws-serverless-fastapi-cicd-pipeline/actions
-
-name: CI/CD Pipeline - dev-feature1 yaml
+name: CI/CD Pipeline - main
 
 on:
-  push
+  push:
+    branches: [ main ]
 
 jobs:
 
@@ -71,7 +71,7 @@ jobs:
   continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
-    if: github.ref == 'refs/heads/dev-feature1'
+    if: github.ref == 'refs/heads/main'
     steps:
 
       - name: Install AWS CLI
