@@ -14,7 +14,7 @@
 # http://127.0.0.1:8000/api/v1/users/
 # http://127.0.0.1:8000/api/v1/posts/
 # http://127.0.0.1:8000/openapi.json
-
+# this is how you add a
 # cd into app - cd app, uvicorn main:app --reload                 
 # https://www.programcreek.com/python/example/123593/google.cloud.logging.Client
 
